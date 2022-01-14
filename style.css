@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;1,700&display=swap');
+
+:root{
+    --Blanc : #ffffff;
+--Noir : #000000;
+--Orange : #ff6347;
+--Gris : #797878;
+--Gris-dark : #161515;
+--Gris-clair : #d9d7d7;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo' , serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+a{
+    text-decoration: none;
+    color: var(--Blanc);
+    background-color: var(--Orange);
+    font-weight: 400;
+    border: 1px solid var(--Orange);
+    border-radius: 4px;
+    font-size: 22px;
+    padding: 10px 17px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    background-color: var(--Noir);
+    align-items: center;
+}
+
+nav #logo{
+    transform: scale(1);
+    margin: 20px;
+    
+
+}
+nav span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    position: relative;
+    right: 20px;
+}
+
+nav span ion-icon{
+    
+    font-size: 40px;
+    filter:invert(1)
+    
+
+}
+
+.firstpage{
+    color: var(--Blanc);
+    background: url('/images/hero-image.jpg');
+    display: flex;
+    
+    align-items: center;
+    
+    flex-direction: column;
+    height: calc(100vh + 70px );
+}
+
+.firstpage p:first-child{
+    width: 75%;
+    text-align: center;
+    
+    
+    margin-top: 50px;
+    font-size: 36px;
+    margin-bottom: 50px;
+ 
+}
+
+.firstpage p:nth-child(2){
+      width: 75%;
+    text-align: center;
+    font-weight: 200;
+    font-family: sans-serif;
+    
+    
+    font-size: 18px;
+    margin-bottom: 50px;
+
+}
+.firstpage p:nth-child(2) span{
+
+    font-weight: bold;
+    letter-spacing: 2.2px;
+    
+}
+
+.firstpage #code{
+    margin-top: 50px;
+}
+
+/* Seconde partie */
+
+.secondpage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--Gris-dark)
+
+
+
+}
+
+.secondpage h2, .secondpage h3, .secondpage span{
+    color:var(--Orange)
+}
+
+.secondpage .firstsection {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.secondpage .firstsection {
+    margin-top: 50px;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.secondpage .firstpage #para, .secondpage .section h2{
+    position: relative;
+}
+
+.secondpage .firstsection #para::before
+{
+    text-align: center;
+  width: 60%;
+  height: 1px;
+  position:absolute;  
+  left:50%;
+  transform: translate(-50%); 
+  transform: translate(-50%, -25px);
+  
+  
+  color:var(--Orange);
+  position: -10px;
+  content: '';
+  background-color: var(--Orange);
+  
+
+    
+}
+
+
+
+.secondpage .secondsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 80%;
+    text-align: center;
+}
+
+.secondpage .secondsection h2::before{
+    
+    text-align: center;
+  width: 60%;
+  height: 1px;
+  position:absolute;  
+  left:50%;
+  transform: translate(-50%); 
+  transform: translate(-50%, +50px);
+  
+  
+  color:var(--Orange);
+  position: -10px;
+  content: '';
+  background-color: var(--Orange);
+  
+}
+
+.secondpage .secondsection .part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+
+    
+}
+
+.secondpage .secondsection span{
+
+    width: 60px;
+    height: 60px;
+    background-color: var(--Gris-dark);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.secondpage .secondsection span ion-icon{
+     color: white;
+     font-size: 32px;
+     font-weight: bold;
+}
+
+footer{
+    background-color: var(--Orange);
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+
+
+/* Media Querie */
+
+@media (min-width: 1080px){
+
+    .secondpage .secondsection .flex{
+        display: flex;
+        flex-direction: row;
+
+    }
+}
