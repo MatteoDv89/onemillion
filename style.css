@@ -242,6 +242,19 @@ footer{
 /* Media Querie */
 
 @media (min-width: 1080px){
+    
+    .firstpage p:nth-child(1){
+        font-size: 60px;
+        text-align: center;
+        width: 800px;
+    }
+
+    .firstpage p:nth-child(2){
+
+        width: 780px;
+        font-size: 22px;
+
+    }
 
     .secondpage .secondsection .flex{
         display: flex;
