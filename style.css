@@ -248,4 +248,14 @@ footer{
         flex-direction: row;
 
     }
+    
+    .secondpage .firstsection #para::before{
+        width: 10%;
+
+    }
+
+    .secondpage .secondsection h2::before{
+
+        width: 10%;
+    }
 }
