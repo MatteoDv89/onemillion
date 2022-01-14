@@ -76,7 +76,7 @@ nav span ion-icon{
 
 .firstpage{
     color: var(--Blanc);
-    background: url('/images/hero-image.jpg');
+    background: url('./images/hero-image.jpg');
     display: flex;
     
     align-items: center;
